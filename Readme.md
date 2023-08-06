@@ -16,5 +16,46 @@ This folder contains sfml headers and user can create their own headers file too
 
 4. src <br> this is source file where you write and structure your code 
 
-5. main.cpp
+5. main.cpp <br>
+ here it is only starter code you can link source file from src 
+
+6. MakeFile
+
+``` makefile
+all: compile link
+
+compile:
+	g++ -Iheaders/include -c *.cpp
+
+link:
+	g++ *.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+
+
+```
+### Installation and setup 
+1. vscode <br>
+Download and install vscode from  [ code.visualstudio.com](https://code.visualstudio.com/download) and install c/c++ extension
+
+2. Mingw  <br>
+
+download and install Mingw from [mingw-w64.org](https://www.mingw-w64.org/downloads/)  or [sourceforge.net](https://sourceforge.net/projects/mingw/) (i suggest msys2 it makes things lot more easier) you can find on msys2 website to install it 
+
+3. SFML <br>
+
+download sfml from [sfml-dev.org](https://www.sfml-dev.org/download/sfml/2.6.0/) website and mingw one you can choose 32bit or 64 bit version. 
+
+<br>
+Now structure file system as below and you are good to go . 
+
+<br>
+
+![](/assets/file_sys.png "file structure ")
+
+#### To compile 
+
+use this command on terminal 
+``` bash
+mingw32-make -f MakeFile
+```
+
 
