@@ -4,4 +4,4 @@ compile:
 	g++ -Iheaders/include -c *.cpp
 
 link:
-	g++ build/*.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+	g++ *.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
