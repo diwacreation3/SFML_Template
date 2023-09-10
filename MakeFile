@@ -1,7 +1,9 @@
 all: compile link
 
 compile:
-	g++ -Iheaders/include -c *.cpp
-
+	g++ -Iheaders/include -c main.cpp
+	
 link:
-	g++ *.o -o main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+	g++ main.o -o build/main -Lheaders/lib  -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+	
+	build/main
