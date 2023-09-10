@@ -1,6 +1,7 @@
 # SFML Starter template
-
+> NOTE: Tested on Window 10 
 This is the starter template and guide to setup SFML on windows with mingw and Vscode. <br>
+
 
 I didn't find any useful artical and youtube video so i try to setup project on my own
 
@@ -25,10 +26,10 @@ This folder contains sfml headers and user can create their own headers file too
 all: compile link
 
 compile:
-	g++ -Iheaders/include -c *.cpp
+	g++ -Iheaders/include -c main.cpp
 
 link:
-	g++ *.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+	g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
 
 
 ```
@@ -50,7 +51,7 @@ Now structure file system as below and you are good to go .
 <br>
 
 ![](/assets/file_sys.png "file structure ")
-### The above structure is changed 😉
+
 
 #### To compile 
 
