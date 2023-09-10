@@ -1,0 +1,6 @@
+#ignore some files and folder 
+/test
+.vscode
+*.exe
+*.o
+
