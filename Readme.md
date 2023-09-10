@@ -1,5 +1,6 @@
 # SFML Starter template
 > NOTE: Tested on Window 10 
+
 This is the starter template and guide to setup SFML on windows with mingw and Vscode. <br>
 
 
