@@ -22,6 +22,7 @@ This folder contains sfml headers and user can create their own headers file too
  here it is only starter code you can link source file from src 
 
 6. MakeFile
+> note: Change makefile as your need. this makefile is nnot suitable for larger project
 
 ``` makefile
 all: compile link
@@ -31,6 +32,8 @@ compile:
 
 link:
 	g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+
+	main
 
 
 ```
