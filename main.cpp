@@ -14,18 +14,18 @@ int main()
 {
     
 
-    sf::RenderWindow window(sf::VideoMode(_width, _height), _title);
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    RenderWindow window(VideoMode(_width, _height), _title);
+    CircleShape shape(100.f);
+    shape.setFillColor(Color::Green);
 
     while (window.isOpen())
     {
-        sf::Event event;
+        Event event;
         while (window.pollEvent(event))
         
         {
         
-            if (event.type == sf::Event::Closed)
+            if (event.type == Event::Closed)
                 window.close();
         }
 
