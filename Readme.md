@@ -1,6 +1,6 @@
 # 🍀SFML Starter template
 
-> Note: Tested on Windows 10 only
+> Note: Tested on Windows 10 and Windows 11
 
 This is the starter template and guide to set up SFML on Windows with MinGW and Visual Studio Code.<br>
 
