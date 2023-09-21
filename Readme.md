@@ -28,23 +28,11 @@ This is the source file where you write and structure your code.
 
 Here, it is only the starter code you can link the source file from src.
 
-### 6. MakeFile
+### 6. run.bat
 
-> Note: Change makefile as you need. This makefile is not suitable for larger project.
+This file is used to build the project.
 
-```makefile
-all: compile link
-
-compile:
-	g++ -Iheaders/include -c main.cpp
-
-link:
-	g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
-
-	main
-```
-
-> In case the MakeFile is not working, you can manually type the following command to build.
+> You can also manually type the following command to build.
 
 ```bash
 g++ -Iheaders/include -c main.cpp
@@ -62,7 +50,7 @@ g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-syst
 
 ### 1. Visual Studio Code
 
-Download and install vs code from [ code.visualstudio.com](https://code.visualstudio.com/download) and install the C/C++ extension.
+Download and install Visual Studio Code from [ code.visualstudio.com](https://code.visualstudio.com/download) and install the C/C++ extension.
 
 ### 2. MinGW
 
@@ -76,10 +64,10 @@ Now structure the file system as below and you are good to go.
 
 ![](/assets/file_sys.png "file structure ")
 
-## ⚙️To compile
+## ⚙️To build
 
-Use this command on the terminal.
+Run the run.bat file in the terminal window as following.
 
 ```bash
-mingw32-make -f MakeFile
+.\run.bat
 ```
