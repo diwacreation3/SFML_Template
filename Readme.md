@@ -1,6 +1,6 @@
 # 🍀SFML Starter template
 
-> Note: Tested on Windows 10 only
+> Note: Tested on Windows 10 and Windows 11
 
 This is the starter template and guide to set up SFML on Windows with MinGW and Visual Studio Code.<br>
 
@@ -58,6 +58,10 @@ g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-syst
 .\main
 ```
 
+### 7. Bat File
+
+If, you are using a Windows Machine, you can directly run the bat file for building project.
+
 ## 🛠️Installation and setup
 
 ### 1. Visual Studio Code
@@ -80,6 +84,14 @@ Now structure the file system as below and you are good to go.
 
 Use this command on the terminal.
 
+### 1. Using MakeFile
+
 ```bash
 mingw32-make -f MakeFile
+```
+
+### 2. Using Bat File
+
+```bash
+.\run.bat
 ```

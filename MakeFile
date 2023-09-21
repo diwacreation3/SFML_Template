@@ -1,11 +1,9 @@
-# This make file has some problems working with large projects
-# it will be updated soon 
 all: compile link
 
 compile:
-	g++ -Iheaders/sfml/include -c main.cpp
-	
+	g++ -Iheaders/include -c main.cpp
+
 link:
-	g++ main.o -o main -Lheaders/sfml/lib  -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
-	
+	g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+
 	main
