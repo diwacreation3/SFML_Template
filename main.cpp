@@ -17,7 +17,9 @@ int main()
     RenderWindow window(VideoMode(_width, _height), _title);
     CircleShape shape(100.f);
     shape.setFillColor(Color::Green);
+    shape.setPosition(100.f, 100.f);
 
+    
     while (window.isOpen())
     {
         Event event;
