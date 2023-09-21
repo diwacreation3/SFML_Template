@@ -36,10 +36,10 @@ Here, it is only the starter code you can link the source file from src.
 all: compile link
 
 compile:
-	g++ -Iheaders/include -c main.cpp
+	g++ -Iheaders/sfml/include -c main.cpp
 
 link:
-	g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+	g++ main.o -o main -Lheaders/sfml/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
 
 	main
 ```
@@ -47,20 +47,30 @@ link:
 > In case the MakeFile is not working, you can manually type the following command to build.
 
 ```bash
-g++ -Iheaders/include -c main.cpp
+g++ -Iheaders/sfml/include -c main.cpp
 ```
 
 ```bash
-g++ main.o -o build/main -Lheaders/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+g++ main.o -o main -Lheaders/sfml/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
 ```
 
 ```cpp
 .\main
 ```
-
+> If ./main dosen't work try /main or main on terminal 
 ### 7. Bat File
 
 If, you are using a Windows Machine, you can directly run the bat file for building project.
+
+```bash
+echo Building project 
+
+g++ -Iheaders/sfml/include -c main.cpp
+
+g++ main.o -o main -Lheaders/sfml/lib -lsfml-graphics -lsfml-window -lsfml-system -lopengl32 -lsfml-audio
+
+main
+```
 
 ## 🛠️Installation and setup
 
